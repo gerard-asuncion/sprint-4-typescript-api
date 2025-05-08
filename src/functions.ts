@@ -165,11 +165,11 @@ export async function printWeather(): Promise<void>{
         if(weather){
 
             let icon = document.createElement("img")
-            icon.classList.add("icon-img")
+            icon.classList.add("inline-block")
             icon.src = weather.icon
 
             let temp = document.createElement("div")
-            temp.classList.add("temperature-div")
+            temp.classList.add("inline-block")
             temp.textContent = `${weather.temperature}ºC`
 
             container.appendChild(icon)

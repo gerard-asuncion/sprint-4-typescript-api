@@ -12,41 +12,37 @@
 
 <body class="body">
 
-    <section class="weather">
+    <section class="weather fixed">
         <div id="weather-container"></div>
     </section>
 
     <main>
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-          </h1>
-          <button class="bg-indigo-500 hover:bg-indigo-600 ...">
-            Button
-          </button>
-        <section class="joke">
-            <div class="title">
-                <h2>Preparat per riure?</h2>
-                <img src="../images/smiley.jpg" alt="smiley">
-            </div>
-            <div class="text">
-                <div id="joke-div"></div>
-            </div>
-            <div class="punctuation">
-                <button id="bad" class="punctuation-button">
-                    <img src="#" alt="bad">
-                </button>
-                <button id="neutral" class="punctuation-button">
-                    <img src="#" alt="neutral">
-                </button>
-                <button id="good" class="good">
-                    <img src="#" alt="good">
-                </button>
-            </div>
-            <button id="showButton">Següent acudit</button>
+        <section class="joke bg-[url(/images/background1.png)] bg-center bg-contain bg-no-repeat w-screen h-screen
+        flex justify-center items-center">  
+            <div class="flex flex-col justify-center h-1/2 text-center text-white">
+                <div class="font-bold text-xl py-5">
+                    <h2>Preparat per riure?</h2>
+                </div>
+                <div class="text-lg px-80 py-5">
+                    <div id="joke-div"></div>
+                </div>
+                <div class="py-5">
+                    <button id="bad" class="size-14 p-2">
+                        <img src="./images/bad.svg" alt="bad">
+                    </button>
+                    <button id="neutral" class="size-14 p-2">
+                        <img src="./images/neutral.svg" alt="neutral">
+                    </button>
+                    <button id="good" class="size-14 p-2">
+                        <img src="./images/good.svg" alt="good">
+                    </button>
+                </div>
+                <button class="text-lg border-2 border-black text-black bg-amber-400 rounded-3xl w-40 py-1 m-auto" id="showButton">Següent acudit</button>
+            </div> 
         </section>
     </main>
 
-    <script src="./dist/bbdd.js"></script>r
+    <script src="./dist/bbdd.js"></script>
     <script src="./dist/valoration.js"></script>
     <script type="module" src="./dist/main.js"></script> 
 </body>
