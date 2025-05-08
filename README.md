@@ -24,7 +24,7 @@ L'objectiu de l'exercici és crear una web que mostri acudits obtinguts d'una AP
     1. npm install
     2. pnpm install
 
-### https://api.openweathermap.org/data/2.5/weather
+### https://openweathermap.org/api
 
 - Aquesta API requereix una clau d'accés, que per motius de seguretat no està pujada al repositori de GitHub. 
 - S'haurà d'utilitzar una clau pròpia (aquesta API és gratuita dins d'un límit de peticions).
