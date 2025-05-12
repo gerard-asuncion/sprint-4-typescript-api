@@ -34,6 +34,8 @@ L'objectiu de l'exercici és crear una web que mostri acudits obtinguts d'una AP
     Per últim, si s'escull aquesta opció, caldrà crear l'arxiu .env a la carpeta de backend, i escriure-hi la clau de la següent manera:
     WEATHER_API_KEY=ESCRIURE_AQUÍ_LA_CLAU sense cap espai ni cometes.
 
+    <strong>ENGLISH</strong>
+
 ## Execució
 
 Si es vol executar el jest, caldrà escriure a la terminal: npm test.
