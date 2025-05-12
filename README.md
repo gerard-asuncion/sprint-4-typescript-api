@@ -36,6 +36,13 @@ L'objectiu de l'exercici és crear una web que mostri acudits obtinguts d'una AP
 
     <strong>ENGLISH</strong>
 
+    - This API requires an access key, which is not included in the repository for security reasons.
+    - It is necessary to use your own key (which is free up to a minimum requests).
+    - There are two ways to use the key:
+        1. Through config.ts file which is in src folder under the name config.demo.ts, you just have to change the name to config.ts and write your key there as it is indicated in the file itself. First you have to change the name to config.ts and then introduce the key, otherwise it is possible that it may be permanently accessible through GitHub repository if you push it. 
+        2. Through the backend. This option is a little bit more difficult, but it has the advantage that the key will not be visible in the browser everytime it is executed, as it will using config.ts. It doesn't make any change because you are executing it localy in your pc, but it must be seriosly considerated if the same project is going to have some visibility.
+            What you have to do if you want to use the backend, is to create an .env file inside of the backend folder and write the access key there, as it follows: WEATHER_API_KEY=YOUR_KEY_HERE, with no spaces and no " or '. Then, you hacve to modificate the getWeather() function to fetch directly from the backend file and not the weather API, then you have to run the backend file, called index.js, and then execute the html while index.js is running.
+
 ## Execució
 
 Si es vol executar el jest, caldrà escriure a la terminal: npm test.
